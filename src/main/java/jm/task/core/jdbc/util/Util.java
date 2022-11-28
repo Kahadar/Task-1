@@ -11,6 +11,7 @@ public class Util {
     public static final String PASSWORD = "root";
     public static final String URL = "jdbc:postgresql://localhost:5432/testTask";
     private static final String DRIVER = "org.postgresql.Driver";
+
     public static Statement statement;
     public static Connection connection;
 
@@ -28,10 +29,6 @@ public class Util {
         }
         return connection;
     }
-
-//    public static Connection getConnection() {
-//        return connection;
-//    }
 
     public static void setConnection(Connection connection) {
         Util.connection = connection;
